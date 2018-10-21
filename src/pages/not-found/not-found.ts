@@ -1,25 +1,13 @@
-import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { NgModule } from '@angular/core';
+import { IonicPageModule } from 'ionic-angular';
+import { NotFoundPage } from './not-found.module';
 
-/**
- * Generated class for the NotFoundPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
-
-@IonicPage()
-@Component({
-  selector: 'page-not-found',
-  templateUrl: 'not-found.html',
+@NgModule({
+  declarations: [
+    NotFoundPage,
+  ],
+  imports: [
+    IonicPageModule.forChild(NotFoundPage),
+  ],
 })
-export class NotFoundPage {
-
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
-  }
-
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad NotFoundPage');
-  }
-
-}
+export class NotFoundPageModule {}

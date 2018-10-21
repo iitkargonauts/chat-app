@@ -11,7 +11,7 @@ import { AvailableRoomsPage } from '../pages/available-rooms/available-rooms';
 import { ChangeRoomPage } from '../pages/change-room/change-room';
 import { LogoutPage } from '../pages/logout/logout';
 import { SignupPage } from '../pages/signup/signup';
-import { NotFoundPage } from '../pages/not-found/not-found';
+import { NotFoundPage } from '../pages/not-found/not-found.module';
 import { RoomsProvider } from '../providers/rooms/rooms';
 
 @NgModule({
@@ -33,7 +33,6 @@ import { RoomsProvider } from '../providers/rooms/rooms';
     StatusBar,
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
-    RoomsProvider
   ]
 })
 export class AppModule {}
